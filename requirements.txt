@@ -1,0 +1,2 @@
+# Core project uses the Python standard library.
+# Install the OpenAI SDK only if you want to swap urllib calls for the SDK.

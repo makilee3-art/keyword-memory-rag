@@ -1,0 +1,63 @@
+[
+  {
+    "name": "auth_vs_style_overlap",
+    "query": "인증 페이지 리팩터링 얘기했던 거 다시 보자",
+    "expected_topics": [
+      "프로젝트/선호/코드스타일",
+      "프로젝트/아키텍처/인증"
+    ],
+    "blocked_topics": [
+      "프로젝트/아키텍처/데이터베이스",
+      "프로젝트/배포/인프라"
+    ],
+    "expected_terms": [
+      "리팩터링",
+      "useMemo",
+      "인증",
+      "단순구조"
+    ],
+    "answer_points": [
+      "인증 문맥과 코드스타일 선호를 같이 회수해야 함"
+    ]
+  },
+  {
+    "name": "todo_vs_bug_overlap",
+    "query": "로그인 문제 중에서 아직 안 끝난 거 있었지?",
+    "expected_topics": [
+      "프로젝트/작업상태/TODO",
+      "프로젝트/버그/로그인"
+    ],
+    "blocked_topics": [
+      "프로젝트/아키텍처/데이터베이스"
+    ],
+    "expected_terms": [
+      "미완료",
+      "리다이렉트",
+      "쿠키",
+      "todo"
+    ],
+    "answer_points": [
+      "로그인 버그 그 자체보다 남아 있는 후속 이슈를 우선 회수해야 함"
+    ]
+  },
+  {
+    "name": "db_vs_deploy_noise",
+    "query": "배포 전에 DB 쪽에서 왜 바꾸자고 했는지 기억나?",
+    "expected_topics": [
+      "프로젝트/아키텍처/데이터베이스",
+      "프로젝트/의사결정/이유"
+    ],
+    "blocked_topics": [
+      "프로젝트/배포/인프라"
+    ],
+    "expected_terms": [
+      "postgres",
+      "sqlite",
+      "동시성",
+      "이유"
+    ],
+    "answer_points": [
+      "배포라는 단어에 끌리지 말고 DB 전환 근거를 회수해야 함"
+    ]
+  }
+]

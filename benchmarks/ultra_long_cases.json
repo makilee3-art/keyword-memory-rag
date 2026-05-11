@@ -1,0 +1,44 @@
+[
+  {
+    "name": "auth_bug_with_many_keywords",
+    "query": "그 인증 버그 아직 뭐가 남았지?",
+    "expected_topics": [
+      "프로젝트/버그/로그인",
+      "프로젝트/작업상태/TODO",
+      "프로젝트/아키텍처/인증"
+    ],
+    "blocked_topics": [
+      "프로젝트/배포/인프라",
+      "프로젝트/성능/프론트엔드"
+    ],
+    "expected_terms": [
+      "세션만료",
+      "리다이렉트",
+      "csrf",
+      "테스트"
+    ],
+    "answer_points": [
+      "남아 있는 인증 버그와 후속 TODO를 함께 회수해야 함"
+    ]
+  },
+  {
+    "name": "database_why_amid_noise",
+    "query": "우리가 postgres로 가기로 한 이유 다시 말해줘",
+    "expected_topics": [
+      "프로젝트/아키텍처/데이터베이스",
+      "프로젝트/의사결정/이유"
+    ],
+    "blocked_topics": [
+      "프로젝트/아키텍처/인증",
+      "프로젝트/배포/인프라"
+    ],
+    "expected_terms": [
+      "postgres",
+      "동시성",
+      "트랜잭션"
+    ],
+    "answer_points": [
+      "노이즈 속에서도 DB 결정 이유를 회수해야 함"
+    ]
+  }
+]

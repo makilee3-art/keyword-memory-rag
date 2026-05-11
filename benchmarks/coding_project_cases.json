@@ -1,0 +1,83 @@
+[
+  {
+    "name": "login_bug_followup",
+    "query": "그 인증 버그 다시 보자",
+    "expected_topics": [
+      "프로젝트/버그/로그인",
+      "프로젝트/아키텍처/인증"
+    ],
+    "blocked_topics": [
+      "프로젝트/배포/인프라"
+    ],
+    "expected_terms": [
+      "401",
+      "리다이렉트",
+      "세션",
+      "쿠키"
+    ],
+    "answer_points": [
+      "로그인 버그 문맥을 회수해야 함",
+      "세션 만료 또는 리다이렉트 문제를 언급해야 함"
+    ]
+  },
+  {
+    "name": "db_decision_why",
+    "query": "우리가 왜 sqlite 말고 postgres로 가기로 했지?",
+    "expected_topics": [
+      "프로젝트/아키텍처/데이터베이스",
+      "프로젝트/의사결정/이유"
+    ],
+    "blocked_topics": [
+      "프로젝트/선호/코드스타일"
+    ],
+    "expected_terms": [
+      "동시성",
+      "트랜잭션",
+      "sqlite",
+      "postgres"
+    ],
+    "answer_points": [
+      "DB 전환 이유를 설명해야 함",
+      "동시성 또는 트랜잭션 안정성을 포함해야 함"
+    ]
+  },
+  {
+    "name": "style_preference_recall",
+    "query": "지난번에 싫다고 한 리팩터링 방식 뭐였지?",
+    "expected_topics": [
+      "프로젝트/선호/코드스타일"
+    ],
+    "blocked_topics": [
+      "프로젝트/아키텍처/데이터베이스"
+    ],
+    "expected_terms": [
+      "useMemo",
+      "리팩터링",
+      "선호",
+      "금지"
+    ],
+    "answer_points": [
+      "싫어했던 리팩터링 취향을 회수해야 함"
+    ]
+  },
+  {
+    "name": "auth_todo_recall",
+    "query": "인증 쪽 아직 남은 할일 있었나?",
+    "expected_topics": [
+      "프로젝트/작업상태/TODO",
+      "프로젝트/아키텍처/인증"
+    ],
+    "blocked_topics": [
+      "프로젝트/배포/인프라"
+    ],
+    "expected_terms": [
+      "csrf",
+      "테스트",
+      "미완료",
+      "todo"
+    ],
+    "answer_points": [
+      "남은 인증 TODO를 회수해야 함"
+    ]
+  }
+]
