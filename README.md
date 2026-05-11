@@ -1,6 +1,6 @@
 # keyword-memory-rag
 
-A prototype for long-conversation memory retrieval using topic and keyword memory instead of pure vector similarity.
+Long-conversation memory retrieval with topic and keyword memory.
 
 ## Why
 

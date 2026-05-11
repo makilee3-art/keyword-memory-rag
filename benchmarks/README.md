@@ -1,17 +1,18 @@
 # Benchmarks
 
-평가 케이스를 코드 하드코딩이 아니라 JSON 데이터로 관리한다.
+This folder contains benchmark case definitions for retrieval and answer evaluation.
 
-## 파일
+## Files
 
-- `coding_project_cases.json`: 코딩 프로젝트 장기 대화 회수 케이스
-- `ultra_long_cases.json`: 초장기 대화/다량 키워드 회수 케이스
+- `coding_project_cases.json`: long-context coding project cases
+- `ultra_long_cases.json`: ultra-long noisy memory cases
+- `hard_cases.json`: hard negative overlap cases
 
-## 필드
+## Fields
 
-- `name`: 케이스 이름
-- `query`: 사용자 질문
-- `expected_topics`: 상위 retrieval 결과에 꼭 포함되어야 하는 토픽
-- `blocked_topics`: 가능하면 상위 retrieval 결과에서 피해야 하는 토픽
-- `expected_terms`: 회수된 메모리 본문에 포함되길 기대하는 핵심 단어
-- `answer_points`: 최종 답변 평가 시 참고할 포인트
+- `name`: case name
+- `query`: user question
+- `expected_topics`: topics that should appear in the top retrieval results
+- `blocked_topics`: topics that should not dominate the top retrieval results
+- `expected_terms`: key terms that should appear in the retrieved memories
+- `answer_points`: expected answer content for answer evaluation
