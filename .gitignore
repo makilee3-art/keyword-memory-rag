@@ -8,3 +8,5 @@ venv/
 .env
 *.db
 *.sqlite
+playground/*.db
+playground/*.sqlite

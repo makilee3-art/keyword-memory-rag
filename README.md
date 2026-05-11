@@ -49,6 +49,7 @@ This project does:
 - [scripts/benchmark_metrics.py](/E:/nez/keywordset%20rag/scripts/benchmark_metrics.py): retrieval metrics
 - [scripts/answer_benchmark.py](/E:/nez/keywordset%20rag/scripts/answer_benchmark.py): offline answer evaluation
 - [scripts/answer_benchmark_live.py](/E:/nez/keywordset%20rag/scripts/answer_benchmark_live.py): heuristic vs LLM answer comparison
+- [playground/chatgpt_memory_chat.py](/E:/nez/keywordset%20rag/playground/chatgpt_memory_chat.py): interactive ChatGPT API long-memory playground
 - [benchmarks/](/E:/nez/keywordset%20rag/benchmarks): benchmark case definitions
 - [tests/](/E:/nez/keywordset%20rag/tests): automated tests
 
@@ -80,6 +81,7 @@ python scripts/answer_benchmark.py
 python scripts/live_chat_test.py
 python scripts/coding_project_live_test.py
 python scripts/answer_benchmark_live.py
+python playground/chatgpt_memory_chat.py
 ```
 
 ## Benchmark Data
